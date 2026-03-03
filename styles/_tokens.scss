@@ -1,0 +1,21 @@
+:root {
+  --color-background: #fff;
+  --color-foreground: #1a1a1a;
+  --color-text-white: #fff;
+  --color-focus-ring: #4a90d9;
+  --color-primary: #ff0;
+  --color-primary-hover: #ff9;
+  --color-button-text: rgb(0 0 0 / 90%);
+  --font-body: 'IBM Plex Serif', georgia, 'Times New Roman', serif;
+  --font-display: 'Sansation', arial, helvetica, sans-serif;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-xl: 2.25rem;
+  --font-size-2xl: 3.5rem;
+  --line-height-body: 1.4;
+  --line-height-display: 1.2;
+  --letter-spacing-display: -0.03em;
+  --radius-lg: 0.75rem;
+  --radius-full: 9999px;
+  --transition-fast: 150ms ease;
+}

@@ -1,0 +1,28 @@
+@use '../../styles/mixins' as *;
+
+.header {
+  @include content-padding;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 40px;
+  background: var(--color-primary);
+
+  @include sm {
+    width: 230px;
+  }
+
+  @include md {
+    width: 307px;
+  }
+
+  @include lg {
+    width: 960px;
+  }
+}

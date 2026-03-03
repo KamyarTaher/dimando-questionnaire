@@ -1,0 +1,25 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "selector-class-pattern": null,
+    "declaration-empty-line-before": "never",
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "max-nesting-depth": 4,
+    "selector-max-compound-selectors": 4,
+    "color-named": "never",
+    "shorthand-property-no-redundant-values": true,
+    "declaration-no-important": true,
+    "no-descending-specificity": [
+      true,
+      {
+        "ignore": ["selectors-within-list"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+@use '../../styles/mixins' as *;
+
+.description {
+  @include text-md;
+  color: rgb(0 0 0 / 80%);
+  padding-bottom: 24px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 64px;
+
+  > * {
+    transition:
+      background-color var(--transition-fast),
+      transform var(--transition-fast),
+      opacity var(--transition-fast);
+  }
+}
+
+.filterInactive {
+  opacity: 0.5;
+}
+
+.questionnaires {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 900px;
+}
+
+.questionnaire {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.questionnaireHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questionnaireTitle {
+  @include text-xl;
+  color: var(--color-primary);
+}
+
+.score {
+  @include text-md;
+  font-weight: 700;
+  color: rgb(0 0 0 / 50%);
+}
+
+.questionResult {
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
+}
+
+.supTitle {
+  @include text-sm;
+  color: rgb(0 0 0 / 80%);
+  padding-bottom: 22px;
+}
+
+.questionText {
+  @include text-xl;
+  color: rgb(0 0 0 / 80%);
+  padding-bottom: 28px;
+}
+
+.resultRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.followUpInfo {
+  padding-top: 12px;
+}
+
+.followUpLabel {
+  @include text-sm;
+  font-weight: 700;
+  color: rgb(0 0 0 / 80%);
+  padding-bottom: 4px;
+}
+
+.followUpText {
+  @include text-md;
+  color: rgb(0 0 0 / 80%);
+}
+
+.noAnswer {
+  @include text-sm;
+  color: rgb(0 0 0 / 40%);
+}
+
+.empty {
+  @include text-md;
+  color: rgb(0 0 0 / 50%);
+  padding: 32px 0;
+}

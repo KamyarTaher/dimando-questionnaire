@@ -1,0 +1,48 @@
+@use '../styles/mixins' as *;
+
+.page {
+  @include content-padding;
+}
+
+.title {
+  @include text-2xl;
+  color: rgb(0 0 0 / 80%);
+  max-width: 640px;
+  padding-bottom: 50px;
+}
+
+.description {
+  @include text-md;
+  color: rgb(0 0 0 / 80%);
+  padding-bottom: 25px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include sm {
+    flex-flow: row wrap;
+  }
+
+  @include xl {
+    max-width: 1338px;
+  }
+}
+
+.cardLink {
+  display: block;
+
+  @include sm {
+    width: calc(50% - 12px);
+  }
+
+  @include lg {
+    width: calc(33.333% - 16px);
+  }
+
+  @include xl {
+    width: 430px;
+  }
+}
